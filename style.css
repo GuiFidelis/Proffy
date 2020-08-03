@@ -1,5 +1,7 @@
+/* CSS - Cascading Style Sheets */
 :root {
-  --color-background: #f0f0f7;
+  /* elemento principal/raiz do html inteiro*/
+  --color-background: #f0f0f7; /* --nome define uma variavel, de cor no caso*/
   --color-primary-lighter: #9871f5;
   --color-primary-light: #916bea;
   --color-primary: #8257e5;
@@ -23,20 +25,26 @@
   font-size: 60%; /* controle das medidas rem */
 }
 
+/* propriedade * significa muitos elementos */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* padding (preenchimento) funciona em sentido horário:
+  padding-top: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  padding-right: 0; */
+  box-sizing: border-box; /* conta tamanho da caixa a partir da borda*/
 }
 
 html,
 body {
-  height: 100vh;
+  height: 100vh; /* viewport height (altura) ajusta ao tamanho da tela*/
 }
 
 body {
   backgound: var(--color-background);
-  display: flex;
+  display: flex; /* visualização/exibição do elemento */
   align-items: center;
   justify-content: center;
 }
@@ -45,16 +53,15 @@ body,
 input,
 button,
 textarea {
-  font: 500 1.6rem Poppins;
-  /* 
+  /* font: 500 1.6rem Poppins; é o mesmo que as três declarações abaixo:*/
   font-weight: 500;
   font-family: Poppins;
   font-size: 1.6rem;
-  */
   color: var(--color-text-base);
 }
 
 #container {
-  width: 90vw;
+  /* box model */
+  width: 90vw; /* viewport width (largura) ajusta ao tamanho da tela*/
   max-width: 700px;
 }
