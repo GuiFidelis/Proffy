@@ -1,7 +1,5 @@
-/* CSS - Cascading Style Sheets */
 :root {
-  /* elemento principal/raiz do html inteiro*/
-  --color-background: #f0f0f7; /* --nome define uma variavel, de cor no caso*/
+  --color-background: #f0f0f7;
   --color-primary-lighter: #9871f5;
   --color-primary-light: #916bea;
   --color-primary: #8257e5;
@@ -21,30 +19,23 @@
   --color-box-footer: #fafafc;
   --color-small-info: #c1bccc;
 
-  /*tamanho da fonte padrão: 16px - 100% - 1rem*/
-  font-size: 60%; /* controle das medidas rem */
+  font-size: 60%;
 }
 
-/* propriedade * significa muitos elementos */
 * {
   margin: 0;
   padding: 0;
-  /* padding (preenchimento) funciona em sentido horário:
-  padding-top: 0;
-  padding-left: 0;
-  padding-bottom: 0;
-  padding-right: 0; */
-  box-sizing: border-box; /* conta tamanho da caixa a partir da borda*/
+  box-sizing: border-box;
 }
 
 html,
 body {
-  height: 100vh; /* viewport height (altura) ajusta ao tamanho da tela*/
+  height: 100vh;
 }
 
 body {
   backgound: var(--color-background);
-  display: flex; /* visualização/exibição do elemento */
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -53,15 +44,16 @@ body,
 input,
 button,
 textarea {
-  /* font: 500 1.6rem Poppins; é o mesmo que as três declarações abaixo:*/
+  font: 500 1.6rem Poppins;
+  /* 
   font-weight: 500;
   font-family: Poppins;
   font-size: 1.6rem;
+  */
   color: var(--color-text-base);
 }
 
 #container {
-  /* box model */
-  width: 90vw; /* viewport width (largura) ajusta ao tamanho da tela*/
+  width: 90vw;
   max-width: 700px;
 }
